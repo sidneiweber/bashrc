@@ -8,3 +8,6 @@ fi
 
 # Mans coloridas
 export MANPAGER="/usr/bin/most -s"
+
+# Alias update
+alias update='pacman -Syu'
