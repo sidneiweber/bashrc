@@ -8,8 +8,15 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+# Configurações Historico
+export HISTIGNORE="&:ls:[bf]g:exit:reset:clear:cd*"
+export HISTSIZE=4096
+export HISTCONTROL="ignoreboth:erasedups"
+shopt -s histreedit;
+
 # Mans coloridas
 export MANPAGER="/usr/bin/most -s"
 
-# Alias update
+# Alias
 alias update='pacman -Syu'
+alias ls='ls --color=auto'
