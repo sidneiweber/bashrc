@@ -60,4 +60,4 @@ history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
 } 
 
 # alisa previsao tempo
-alias tempo='curl http://wttr.in/jaguariuna'
+alias tempo='curl http://wttr.in/sapiranga'
